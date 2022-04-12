@@ -1,0 +1,7 @@
+[submodule "hathai25/themes/hugo-theme-stack"]
+	path = hathai25/themes/hugo-theme-stack
+	url = https://github.com/CaiJimmy/hugo-theme-stack/
+[submodule "hathai25/public"]
+	path = hathai25/public
+	url = https://github.com/hathai25/hathai25.github.io.git
+	branch = main
