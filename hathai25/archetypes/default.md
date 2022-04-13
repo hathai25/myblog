@@ -1,6 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+author: Ha Thai
 date: {{ .Date }}
-draft: true
+draft: false
+license: 
 ---
 
