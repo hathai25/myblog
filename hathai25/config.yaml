@@ -61,8 +61,8 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: false
-        provider: disqus
+        enabled: true
+        provider: giscus
 
         disqusjs:
             shortname:
@@ -118,9 +118,9 @@ params:
             siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
 
         giscus:
-            repo:
-            repoID:
-            category:
+            repo: hathai25/hathai25.github.io
+            repoID: R_kgDOHKYvhQ
+            category: 
             categoryID:
             mapping:
             lightTheme:
