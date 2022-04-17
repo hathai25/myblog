@@ -120,9 +120,9 @@ params:
         giscus:
             repo: hathai25/hathai25.github.io
             repoID: R_kgDOHKYvhQ
-            category: 
-            categoryID:
-            mapping:
+            category: General
+            categoryID: DIC_kwDOHKYvhc4COjMx
+            mapping: pathname
             lightTheme:
             darkTheme:
             reactionsEnabled: 1
