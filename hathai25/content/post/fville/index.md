@@ -1,6 +1,6 @@
 ---
 author: "Ha Thai"
-title: "A day in Fville!"
+title: "A day at Fville!"
 date: 2022-06-09
 description: "This was NOT sponsored by FPT!"
 image: "fpt.jpg"
