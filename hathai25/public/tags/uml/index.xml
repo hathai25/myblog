@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>UML on The Real Hathai</title>
+        <link>https://hathai25.github.io/tags/uml/</link>
+        <description>Recent content in UML on The Real Hathai</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hathai25.github.io/tags/uml/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>UML: Use Case Diagram Tutorial</title>
+        <link>https://hathai25.github.io/p/uml-use-case-diagram-tutorial/</link>
+        <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://hathai25.github.io/p/uml-use-case-diagram-tutorial/</guid>
+        <description>&lt;img src="https://hathai25.github.io/p/uml-use-case-diagram-tutorial/background.jpg" alt="Featured image of post UML: Use Case Diagram Tutorial" /&gt;&lt;p&gt;In this tutorial, I want to talk about &lt;em&gt;Use case Diagram&lt;/em&gt;, one of the basic knowledge you need to know when studying Object-oriented Programming (OOP). For the illustrations in this tutorial, I&amp;rsquo;m using &lt;em&gt;Astah UML&lt;/em&gt;, a design tool that supports UML. You can download it &lt;a class=&#34;link&#34; href=&#34;https://astah.net/downloads/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;here&lt;/a&gt;, and learn how to use it with this &lt;a class=&#34;link&#34; href=&#34;https://astah.net/support/astah-pro/user-guide/usecase-diagram/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-a-use-case-diagram&#34;&gt;What is a use case diagram?
+&lt;/h2&gt;&lt;p&gt;In Object-oriented paradigm, when it comes to designing the system, we often demonstrate that by the Unified Modeling Language (UML). A use case diagram can be used to summarize the details of your system&amp;rsquo;s users and their interaction with the system.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;So what exactly is the user&amp;rsquo;s interaction with the system?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Good question. Supposed that you&amp;rsquo;re building an application, let&amp;rsquo;s say an online Bookstore. In this case, &lt;strong&gt;interactions&lt;/strong&gt; are the things users can do with your application, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Viewing books&lt;/li&gt;
+&lt;li&gt;Buying books&lt;/li&gt;
+&lt;li&gt;Adding books to cart&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can add as many interactions as you can think of, but you got the point. And we can demonstrate the user&amp;rsquo;s interaction through the &lt;em&gt;Use case Diagram&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Now let&amp;rsquo;s learn how to draw it!&lt;/p&gt;
+&lt;h2 id=&#34;use-case-diagram-components&#34;&gt;Use case diagram components
+&lt;/h2&gt;&lt;p&gt;There are 5 main components you&amp;rsquo;ll be working with in a use case diagram:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Actor&lt;/li&gt;
+&lt;li&gt;Use Case&lt;/li&gt;
+&lt;li&gt;Association&lt;/li&gt;
+&lt;li&gt;System Boundary Box&lt;/li&gt;
+&lt;li&gt;Relationships&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;actor&#34;&gt;Actor
+&lt;/h3&gt;&lt;p&gt;An actor is a user that interacts with the system. It can be a person, an organization, or even a server/ system.&lt;/p&gt;
+&lt;p&gt;In order to identify the actor, you need to answer this very basic question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;ldquo;Who will &lt;strong&gt;interact&lt;/strong&gt; with the application?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Let&amp;rsquo;s say you need to build an e-commerce website. So who will be the actor here?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;User&lt;/li&gt;
+&lt;li&gt;Admin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pretty simple, right?&lt;/p&gt;
+&lt;p&gt;In a use case diagram, an actor is normally drawn as a stickman, but it can also be drawn as in the picture below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hathai25.github.io/p/uml-use-case-diagram-tutorial/actor.webp&#34;
+	width=&#34;676&#34;
+	height=&#34;308&#34;
+	srcset=&#34;https://hathai25.github.io/p/uml-use-case-diagram-tutorial/actor_hu12378382425589067789.webp 480w, https://hathai25.github.io/p/uml-use-case-diagram-tutorial/actor_hu807673484268472788.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Actor in Use case diagram&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;219&#34;
+		data-flex-basis=&#34;526px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Of course, you can draw the actor at your will, as long as there&amp;rsquo;s a detailed name with it.&lt;/p&gt;
+&lt;h3 id=&#34;use-case-association--boundary&#34;&gt;Use case, Association &amp;amp; Boundary
+&lt;/h3&gt;&lt;p&gt;These definitions are pretty straightforward, so I&amp;rsquo;ll just give you the concept and their symbols in the use case diagram:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Use cases&lt;/strong&gt;: Horizontally shaped ovals that represent the different uses that a user might have.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Association&lt;/strong&gt;: A line between actors and use cases. In complex diagrams, it is important to know which actors are associated with which use cases.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;System boundary boxes&lt;/strong&gt;: A box that sets a system scope to use cases. All use cases outside the box would be considered outside the scope of that system. For example: In a bank, a client can only view their transactions, not all the transactions in the system, since that &lt;em&gt;use case&lt;/em&gt; is out of their scope.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Generally, it&amp;rsquo;s easy to work with the above components, since they&amp;rsquo;re not hard to understand. The thing that might actually confuse you is &lt;strong&gt;Relationships&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;relationships&#34;&gt;Relationships
+&lt;/h3&gt;&lt;p&gt;There are 3 types of relationships:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Complicated&lt;/li&gt;
+&lt;li&gt;&amp;hellip; Wait, wrong topic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are 3 types of relationships, again:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Include&lt;/li&gt;
+&lt;li&gt;Extend&lt;/li&gt;
+&lt;li&gt;Generalization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;include&#34;&gt;Include
+&lt;/h4&gt;&lt;p&gt;Include is like a must-have relationship between use cases.&lt;/p&gt;
+&lt;p&gt;Think about include this way: suppose you&amp;rsquo;re hungry and want to get something to eat. You walk into MacDonald&amp;rsquo;s and say: &amp;ldquo;I want to order food!&amp;rdquo;. But what do you have to do first before that?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You have to choose what to eat first!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;And you can draw it in your use case diagram like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hathai25.github.io/p/uml-use-case-diagram-tutorial/include.png&#34;
+	width=&#34;836&#34;
+	height=&#34;552&#34;
+	srcset=&#34;https://hathai25.github.io/p/uml-use-case-diagram-tutorial/include_hu14555247635961733947.png 480w, https://hathai25.github.io/p/uml-use-case-diagram-tutorial/include_hu3944489149254116599.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;151&#34;
+		data-flex-basis=&#34;363px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;So to order food, you need to choose what to buy, pretty reasonable, right? That is the &lt;em&gt;include&lt;/em&gt; relationship. Only when you finish choosing can you proceed to the payment. I&amp;rsquo;ve added another include use case to our diagram, &amp;ldquo;Pay the food&amp;rdquo; for later use.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s move on to the next one.&lt;/p&gt;
+&lt;h4 id=&#34;extend&#34;&gt;Extend
+&lt;/h4&gt;&lt;p&gt;As I said earlier, include is a must-have relationship between use cases. However, extend is optional. That means if a use case is not compulsory, the actor can choose whether to do it, then it&amp;rsquo;s an extend relationship.&lt;/p&gt;
+&lt;p&gt;So if we go back to our previous example, the MacDonald&amp;rsquo;s one. When you pay for your food, it&amp;rsquo;s optional that you tip the waiter. We can demonstrate that in our use case diagram like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hathai25.github.io/p/uml-use-case-diagram-tutorial/extend.png&#34;
+	width=&#34;957&#34;
+	height=&#34;717&#34;
+	srcset=&#34;https://hathai25.github.io/p/uml-use-case-diagram-tutorial/extend_hu7962221294301861027.png 480w, https://hathai25.github.io/p/uml-use-case-diagram-tutorial/extend_hu13708238270058146818.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Again, pretty straightforward. When it comes to relationships in the use case diagram, just remember: Include is compulsory, extend is optional.&lt;/p&gt;
+&lt;h4 id=&#34;generalization&#34;&gt;Generalization
+&lt;/h4&gt;&lt;p&gt;Generalization is basically to show a parent-child relationship between use cases or even actors. For example:&lt;/p&gt;
+&lt;p&gt;Some use cases generalization relationships:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Login (parent) -&amp;gt; Login with phone/ email (Child)&lt;/li&gt;
+&lt;li&gt;Pay (parent) -&amp;gt; Pay with Paypal/ COD (Child)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Actors generalization relationships:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manager -&amp;gt; Staff&lt;/li&gt;
+&lt;li&gt;Wholesalers -&amp;gt; Retailers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I will use our MacDonald&amp;rsquo;s example here again to demonstrate:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hathai25.github.io/p/uml-use-case-diagram-tutorial/generalization.png&#34;
+	width=&#34;1170&#34;
+	height=&#34;550&#34;
+	srcset=&#34;https://hathai25.github.io/p/uml-use-case-diagram-tutorial/generalization_hu12371285201575097771.png 480w, https://hathai25.github.io/p/uml-use-case-diagram-tutorial/generalization_hu676996171958288837.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;212&#34;
+		data-flex-basis=&#34;510px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Overall, generalization helps you display your use case diagram more clearer. If you learned Object-oriented programming (OOP), you&amp;rsquo;d realize that generalization is inheritable (Inheritance in OOP), which means the child inherits the parent&amp;rsquo;s properties and relationships of other use cases.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion
+&lt;/h2&gt;&lt;p&gt;Everything I just went through above is just the basics of the use case diagram. If you&amp;rsquo;re interested, there&amp;rsquo;s always more to learn, but I think that&amp;rsquo;s enough to draw your OOP assignments at school. Speaking of which, I think I&amp;rsquo;ll end the tutorial by showing you my very first use case diagram (I literally studied how to draw it for 10 mins because I didn&amp;rsquo;t realize that assignment&amp;rsquo;s deadline was in 1 hour). See you around!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hathai25.github.io/p/uml-use-case-diagram-tutorial/firstDiagram.png&#34;
+	width=&#34;1645&#34;
+	height=&#34;982&#34;
+	srcset=&#34;https://hathai25.github.io/p/uml-use-case-diagram-tutorial/firstDiagram_hu1917597273732658407.png 480w, https://hathai25.github.io/p/uml-use-case-diagram-tutorial/firstDiagram_hu15178943850780699027.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Dumb diagram&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;402px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;(Oh my gosh it&amp;rsquo;s so terrible and faulty..)&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
