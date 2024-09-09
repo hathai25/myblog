@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on The Real Hathai</title>
+        <link>https://hathai25.github.io/page/</link>
+        <description>Recent content in Pages on The Real Hathai</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Tue, 12 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hathai25.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About Me</title>
+        <link>https://hathai25.github.io/about-me/</link>
+        <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://hathai25.github.io/about-me/</guid>
+        <description>&lt;p&gt;Have you ever wondered, deep inside you, if there&amp;rsquo;s an inner voice that keeps telling you to do this, but reality force you to do differently, things that you don&amp;rsquo;t really want?&lt;/p&gt;
+&lt;p&gt;Well, each one of us all has that voice that represents our true personality. But it&amp;rsquo;s not that we always have the chance to speak up. We feel stuck. As if there&amp;rsquo;s a stone inside us.&lt;/p&gt;
+&lt;p&gt;The problem is, I can&amp;rsquo;t bear living with that stone. I need to find a way to express myself, not to the whole world, just a place to put my words out.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s why I created this blog.&lt;/p&gt;
+&lt;p&gt;To me, it&amp;rsquo;s a diary where I can write anything about my life at school, my coding journey, or some of my opinions. You might find my posts rather personal, but it&amp;rsquo;s mine anyway.&lt;/p&gt;
+&lt;p&gt;So I hope you&amp;rsquo;ll enjoy it. If not, well, at least thanks for having dropped in.&lt;/p&gt;
+&lt;p&gt;See you around!&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://hathai25.github.io/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://hathai25.github.io/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://hathai25.github.io/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://hathai25.github.io/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on The Real Hathai</title>
+        <link>https://hathai25.github.io/categories/</link>
+        <description>Recent content in Categories on The Real Hathai</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Mon, 15 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hathai25.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Football</title>
+        <link>https://hathai25.github.io/categories/football/</link>
+        <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://hathai25.github.io/categories/football/</guid>
+        <description>&lt;img src="https://hathai25.github.io/categories/football/football.jpg" alt="Featured image of post Football" /&gt;</description>
+        </item>
+        <item>
+        <title>Blog</title>
+        <link>https://hathai25.github.io/categories/blog/</link>
+        <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://hathai25.github.io/categories/blog/</guid>
+        <description>&lt;img src="https://hathai25.github.io/categories/blog/blog.jpg" alt="Featured image of post Blog" /&gt;</description>
+        </item>
+        <item>
+        <title>Tutorials</title>
+        <link>https://hathai25.github.io/categories/tutorials/</link>
+        <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://hathai25.github.io/categories/tutorials/</guid>
+        <description>&lt;img src="https://hathai25.github.io/categories/tutorials/tutorial.jpg" alt="Featured image of post Tutorials" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

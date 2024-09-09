@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="A basic introduction on how to draw a use case diagram.">
+<title>UML: Use Case Diagram Tutorial</title>
+
+<link rel='canonical' href='https://hathai25.github.io/p/uml-use-case-diagram-tutorial/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="UML: Use Case Diagram Tutorial">
+<meta property='og:description' content="A basic introduction on how to draw a use case diagram.">
+<meta property='og:url' content='https://hathai25.github.io/p/uml-use-case-diagram-tutorial/'>
+<meta property='og:site_name' content='The Real Hathai'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='UML' /><meta property='article:tag' content='OOP' /><meta property='article:published_time' content='2022-04-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-04-15T00:00:00&#43;00:00'/><meta property='og:image' content='https://hathai25.github.io/p/uml-use-case-diagram-tutorial/background.jpg' />
+<meta name="twitter:title" content="UML: Use Case Diagram Tutorial">
+<meta name="twitter:description" content="A basic introduction on how to draw a use case diagram."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://hathai25.github.io/p/uml-use-case-diagram-tutorial/background.jpg' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/profile_hu201420226228152088.jpeg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🧑‍💻</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">The Real Hathai</a></h1>
+            <h2 class="site-description">Just a student from HUST, on my way to become a developer.</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/hathai25'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.linkedin.com/in/ph%E1%BA%A1m-huy-h%C3%A0-th%C3%A1i-837097203/'
+                        target="_blank"
+                        title="LinkedIn"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+   <line x1="8" y1="11" x2="8" y2="16"></line>
+   <line x1="8" y1="8" x2="8" y2="8.01"></line>
+   <line x1="12" y1="16" x2="12" y2="11"></line>
+   <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+</svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about-me/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About Me</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#what-is-a-use-case-diagram">What is a use case diagram?</a></li>
+    <li><a href="#use-case-diagram-components">Use case diagram components</a>
+      <ol>
+        <li><a href="#actor">Actor</a></li>
+        <li><a href="#use-case-association--boundary">Use case, Association &amp; Boundary</a></li>
+        <li><a href="#relationships">Relationships</a>
+          <ol>
+            <li><a href="#include">Include</a></li>
+            <li><a href="#extend">Extend</a></li>
+            <li><a href="#generalization">Generalization</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/uml-use-case-diagram-tutorial/">
+                <img src="/p/uml-use-case-diagram-tutorial/background_hu172028120441709028.jpg"
+                        srcset="/p/uml-use-case-diagram-tutorial/background_hu172028120441709028.jpg 800w, /p/uml-use-case-diagram-tutorial/background_hu6017352455322644991.jpg 1600w"
+                        width="800" 
+                        height="450" 
+                        loading="lazy"
+                        alt="Featured image of post UML: Use Case Diagram Tutorial" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/tutorials/" style="background-color: #2a9d8f; color: #fff;">
+                Tutorials
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/uml-use-case-diagram-tutorial/">UML: Use Case Diagram Tutorial</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            A basic introduction on how to draw a use case diagram.
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 15, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    5 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>In this tutorial, I want to talk about <em>Use case Diagram</em>, one of the basic knowledge you need to know when studying Object-oriented Programming (OOP). For the illustrations in this tutorial, I&rsquo;m using <em>Astah UML</em>, a design tool that supports UML. You can download it <a class="link" href="https://astah.net/downloads/"  target="_blank" rel="noopener"
+    >here</a>, and learn how to use it with this <a class="link" href="https://astah.net/support/astah-pro/user-guide/usecase-diagram/"  target="_blank" rel="noopener"
+    >documentation</a>.</p>
+<h2 id="what-is-a-use-case-diagram">What is a use case diagram?
+</h2><p>In Object-oriented paradigm, when it comes to designing the system, we often demonstrate that by the Unified Modeling Language (UML). A use case diagram can be used to summarize the details of your system&rsquo;s users and their interaction with the system.</p>
+<blockquote>
+<p>So what exactly is the user&rsquo;s interaction with the system?</p>
+</blockquote>
+<p>Good question. Supposed that you&rsquo;re building an application, let&rsquo;s say an online Bookstore. In this case, <strong>interactions</strong> are the things users can do with your application, such as:</p>
+<ul>
+<li>Viewing books</li>
+<li>Buying books</li>
+<li>Adding books to cart</li>
+</ul>
+<p>You can add as many interactions as you can think of, but you got the point. And we can demonstrate the user&rsquo;s interaction through the <em>Use case Diagram</em>.</p>
+<p>Now let&rsquo;s learn how to draw it!</p>
+<h2 id="use-case-diagram-components">Use case diagram components
+</h2><p>There are 5 main components you&rsquo;ll be working with in a use case diagram:</p>
+<ul>
+<li>Actor</li>
+<li>Use Case</li>
+<li>Association</li>
+<li>System Boundary Box</li>
+<li>Relationships</li>
+</ul>
+<h3 id="actor">Actor
+</h3><p>An actor is a user that interacts with the system. It can be a person, an organization, or even a server/ system.</p>
+<p>In order to identify the actor, you need to answer this very basic question:</p>
+<blockquote>
+<p><em>&ldquo;Who will <strong>interact</strong> with the application?&rdquo;</em></p>
+</blockquote>
+<p>Let&rsquo;s say you need to build an e-commerce website. So who will be the actor here?</p>
+<ul>
+<li>User</li>
+<li>Admin</li>
+</ul>
+<p>Pretty simple, right?</p>
+<p>In a use case diagram, an actor is normally drawn as a stickman, but it can also be drawn as in the picture below:</p>
+<p><img src="/p/uml-use-case-diagram-tutorial/actor.webp"
+	width="676"
+	height="308"
+	srcset="/p/uml-use-case-diagram-tutorial/actor_hu12378382425589067789.webp 480w, /p/uml-use-case-diagram-tutorial/actor_hu807673484268472788.webp 1024w"
+	loading="lazy"
+	
+		alt="Actor in Use case diagram"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="219"
+		data-flex-basis="526px"
+	
+></p>
+<p>Of course, you can draw the actor at your will, as long as there&rsquo;s a detailed name with it.</p>
+<h3 id="use-case-association--boundary">Use case, Association &amp; Boundary
+</h3><p>These definitions are pretty straightforward, so I&rsquo;ll just give you the concept and their symbols in the use case diagram:</p>
+<ul>
+<li><strong>Use cases</strong>: Horizontally shaped ovals that represent the different uses that a user might have.</li>
+<li><strong>Association</strong>: A line between actors and use cases. In complex diagrams, it is important to know which actors are associated with which use cases.</li>
+<li><strong>System boundary boxes</strong>: A box that sets a system scope to use cases. All use cases outside the box would be considered outside the scope of that system. For example: In a bank, a client can only view their transactions, not all the transactions in the system, since that <em>use case</em> is out of their scope.</li>
+</ul>
+<p>Generally, it&rsquo;s easy to work with the above components, since they&rsquo;re not hard to understand. The thing that might actually confuse you is <strong>Relationships</strong>.</p>
+<h3 id="relationships">Relationships
+</h3><p>There are 3 types of relationships:</p>
+<ul>
+<li>Complicated</li>
+<li>&hellip; Wait, wrong topic</li>
+</ul>
+<p>There are 3 types of relationships, again:</p>
+<ul>
+<li>Include</li>
+<li>Extend</li>
+<li>Generalization</li>
+</ul>
+<h4 id="include">Include
+</h4><p>Include is like a must-have relationship between use cases.</p>
+<p>Think about include this way: suppose you&rsquo;re hungry and want to get something to eat. You walk into MacDonald&rsquo;s and say: &ldquo;I want to order food!&rdquo;. But what do you have to do first before that?</p>
+<p><strong>You have to choose what to eat first!</strong></p>
+<p>And you can draw it in your use case diagram like this:</p>
+<p><img src="/p/uml-use-case-diagram-tutorial/include.png"
+	width="836"
+	height="552"
+	srcset="/p/uml-use-case-diagram-tutorial/include_hu14555247635961733947.png 480w, /p/uml-use-case-diagram-tutorial/include_hu3944489149254116599.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="151"
+		data-flex-basis="363px"
+	
+></p>
+<p>So to order food, you need to choose what to buy, pretty reasonable, right? That is the <em>include</em> relationship. Only when you finish choosing can you proceed to the payment. I&rsquo;ve added another include use case to our diagram, &ldquo;Pay the food&rdquo; for later use.</p>
+<p>Let&rsquo;s move on to the next one.</p>
+<h4 id="extend">Extend
+</h4><p>As I said earlier, include is a must-have relationship between use cases. However, extend is optional. That means if a use case is not compulsory, the actor can choose whether to do it, then it&rsquo;s an extend relationship.</p>
+<p>So if we go back to our previous example, the MacDonald&rsquo;s one. When you pay for your food, it&rsquo;s optional that you tip the waiter. We can demonstrate that in our use case diagram like this:</p>
+<p><img src="/p/uml-use-case-diagram-tutorial/extend.png"
+	width="957"
+	height="717"
+	srcset="/p/uml-use-case-diagram-tutorial/extend_hu7962221294301861027.png 480w, /p/uml-use-case-diagram-tutorial/extend_hu13708238270058146818.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+></p>
+<p>Again, pretty straightforward. When it comes to relationships in the use case diagram, just remember: Include is compulsory, extend is optional.</p>
+<h4 id="generalization">Generalization
+</h4><p>Generalization is basically to show a parent-child relationship between use cases or even actors. For example:</p>
+<p>Some use cases generalization relationships:</p>
+<ul>
+<li>Login (parent) -&gt; Login with phone/ email (Child)</li>
+<li>Pay (parent) -&gt; Pay with Paypal/ COD (Child)</li>
+</ul>
+<p>Actors generalization relationships:</p>
+<ul>
+<li>Manager -&gt; Staff</li>
+<li>Wholesalers -&gt; Retailers</li>
+</ul>
+<p>I will use our MacDonald&rsquo;s example here again to demonstrate:</p>
+<p><img src="/p/uml-use-case-diagram-tutorial/generalization.png"
+	width="1170"
+	height="550"
+	srcset="/p/uml-use-case-diagram-tutorial/generalization_hu12371285201575097771.png 480w, /p/uml-use-case-diagram-tutorial/generalization_hu676996171958288837.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="212"
+		data-flex-basis="510px"
+	
+></p>
+<p>Overall, generalization helps you display your use case diagram more clearer. If you learned Object-oriented programming (OOP), you&rsquo;d realize that generalization is inheritable (Inheritance in OOP), which means the child inherits the parent&rsquo;s properties and relationships of other use cases.</p>
+<h2 id="conclusion">Conclusion
+</h2><p>Everything I just went through above is just the basics of the use case diagram. If you&rsquo;re interested, there&rsquo;s always more to learn, but I think that&rsquo;s enough to draw your OOP assignments at school. Speaking of which, I think I&rsquo;ll end the tutorial by showing you my very first use case diagram (I literally studied how to draw it for 10 mins because I didn&rsquo;t realize that assignment&rsquo;s deadline was in 1 hour). See you around!</p>
+<p><img src="/p/uml-use-case-diagram-tutorial/firstDiagram.png"
+	width="1645"
+	height="982"
+	srcset="/p/uml-use-case-diagram-tutorial/firstDiagram_hu1917597273732658407.png 480w, /p/uml-use-case-diagram-tutorial/firstDiagram_hu15178943850780699027.png 1024w"
+	loading="lazy"
+	
+		alt="Dumb diagram"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="402px"
+	
+></p>
+<p>(Oh my gosh it&rsquo;s so terrible and faulty..)</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/uml/">UML</a>
+        
+            <a href="/tags/oop/">OOP</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>hathai25</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/markdown-syntax-guide/">
+        
+        
+            <div class="article-image">
+                <img src="/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.c514d916917173a48a42e0114b469961_hu7626638945853200361.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Markdown Syntax Guide"
+                        
+                        data-hash="md5-xRTZFpFxc6SKQuARS0aZYQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Markdown Syntax Guide</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="hathai25/hathai25.github.io"
+    data-repo-id="R_kgDOHKYvhQ"
+    data-category="General"
+    data-category-id="DIC_kwDOHKYvhc4COjMx"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2022 - 
+        
+        2024 The Real Hathai
+    </section>
+    
+    <section class="powerby">
+        
+            From hathai with no love <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
