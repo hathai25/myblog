@@ -47,10 +47,7 @@ params:
     sidebar:
         emoji: 🧑‍💻
         subtitle: Just a student from HUST, on my way to become a developer.
-        avatar:
-            enabled: true
-            local: true
-            src: img/profile.jpeg
+        avatar: img/profile.jpeg
 
     article:
         math: false
