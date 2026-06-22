@@ -46,7 +46,10 @@ params:
 
     sidebar:
         emoji: 🧑‍💻
-        subtitle: Just a student from HUST, on my way to become a developer.
+        subtitle: |-
+            Software Engineer
+
+            From Hanoi to Tokyo, and still going.
         avatar: img/profile.jpeg
 
     article:
